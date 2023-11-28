@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+/**
+ * @param {string} initialValue
+ * @param {(value: string) => boolean} validator
+ * @returns
+ */
 export const useInput = (initialValue, validator) => {
   const [value, setValue] = useState(initialValue);
   const onChange = (event) => {
